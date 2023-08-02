@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Mirrored from adventure-drivers.apps.minigame.vip/minigame-index.html?mn_config=https://indigo.minigame.vip/v1/api/channel/indigo/main/game/adventure-drivers/config&ts=1690961248442 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Aug 2023 07:34:46 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="UTF-8">
+	<title>Adventure Drivers</title>
+
+
+	<meta name="viewport"
+		content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="mobile-web-app-capable" content="yes" />
+	<meta name="HandheldFriendly" content="true" />
+	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+	<link rel="icon" href="favicon.png" type="image/x-icon">
+	<style>
+		html,
+		body {
+			margin: 0%;
+			padding: 0%;
+			width: 100%;
+			height: 100%;
+			margin: auto;
+			background: #FFFFFF;
+			color: #fff;
+			overflow: hidden;
+			touch-action: none;
+			-ms-touch-action: none;
+		}
+
+		html {
+			display: table;
+			margin: auto;
+		}
+
+		body {
+			display: table-cell;
+			vertical-align: middle;
+		}
+
+		canvas {
+			touch-action: none;
+			-ms-touch-action: none;
+		}
+
+		#gamecanvas {
+			padding: 0;
+			width: 100%;
+			height: 100%;
+			margin: auto;
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+		}
+	</style>
+	<script src="libraries/pixi.min.js" type="text/javascript"></script>
+	<script src="libraries/howler.min.js" type="text/javascript"></script>
+	<script src="poki-sdk.js" type="text/javascript"></script>
+
+	<script src="sdk.minigame.vip/js/1.1/minigameabb7.js?t=1688723713"></script>
+
+</head>
+
+<body>
+	<script src="ads.js" type="text/javascript"></script>
+
+	<canvas id="gamecanvas"></canvas>
+	<script src="AdventureDrivers.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		setTimeout(() => {
+			let isBannerReady = MiniGameAds.isBannerReady(); if (isBannerReady) {
+				MiniGameAds.showBanner().then(() => {
+					console.info("====> show banner success");
+				}).catch(e => {
+					console.error("====> show banner error: " + e.message);
+				});
+			} else {
+				console.info("====> banner not ready");
+			}
+		}, 3000)
+
+	</script>
+</body>
+
+
+<!-- Mirrored from adventure-drivers.apps.minigame.vip/minigame-index.html?mn_config=https://indigo.minigame.vip/v1/api/channel/indigo/main/game/adventure-drivers/config&ts=1690961248442 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Aug 2023 07:34:46 GMT -->
+</html>
